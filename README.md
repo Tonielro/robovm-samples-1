@@ -1,11 +1,5 @@
-## MobiVM samples
+## RoboVM samples by Demyan Kimitsa
 
 
-### Examples of use cases with MobiVM
+### Samples that are not part of official repository yet
 
- * **[Answer Me](AnswerMe)**
-   Sample of using MobiVM to genreate a framework for use in a native obj-c/swift app.
-
-
-## Importing
-Each project can be imported on its own, or you can import the entire structure from the root build.gradle.
