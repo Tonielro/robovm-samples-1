@@ -17,4 +17,11 @@
         <framework>OneSignal</framework>
     </frameworks>
 
+    <appExtensionPaths>
+        <path>libs</path>
+    </appExtensionPaths>
+    <appExtensions>
+        <extension>OneSignalNotificationServiceExtension</extension>
+    </appExtensions>
+
 </config>
