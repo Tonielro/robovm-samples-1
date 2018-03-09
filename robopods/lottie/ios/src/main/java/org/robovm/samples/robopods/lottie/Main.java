@@ -1,4 +1,4 @@
-package org.robovm.samples.robopods.spottie;
+package org.robovm.samples.robopods.lottie;
 
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.uikit.*;

@@ -1,4 +1,4 @@
-package org.robovm.samples.robopods.spottie;
+package org.robovm.samples.robopods.lottie;
 
 import org.robovm.apple.foundation.NSBundle;
 import org.robovm.apple.foundation.NSIndexPath;

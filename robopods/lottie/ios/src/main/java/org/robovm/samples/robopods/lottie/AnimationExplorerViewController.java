@@ -1,4 +1,4 @@
-package org.robovm.samples.robopods.spottie;
+package org.robovm.samples.robopods.lottie;
 
 import org.robovm.apple.coreanimation.CADisplayLink;
 import org.robovm.apple.coregraphics.CGRect;
