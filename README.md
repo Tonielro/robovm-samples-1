@@ -7,5 +7,7 @@
    Sample of using Charts robopod
  * **[OneSignal](robopods/onesignal)**
    Sample of using OneSignal robopod
+ * **[Lottie](robopods/lottie)**
+   Sample of using Lottie robopod
  * **[Framework](framework)**
    Sample framework created with RoboVM and demo project that tells how to use them
