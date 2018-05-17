@@ -25,7 +25,7 @@ public class SampleSDKImpl extends NSObject implements Api.SampleSDK {
     }
 
     @Override
-    public Api.Calculator newCalculator() {
+    public Api.Calculator createCalculator() {
         return new CalculatorImpl();
     }
 

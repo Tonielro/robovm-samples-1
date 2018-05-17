@@ -37,7 +37,7 @@ typedef NSObject<WebServer> WebServer;
 //
 NS_SWIFT_NAME(SampleSDK)
 @protocol SampleSDK
--(Calculator *) newCalculator;
+-(Calculator *) createCalculator;
 -(void) sayHello;
 -(NSString*) roboVmVersion;
 -(WebServer *) webServer;

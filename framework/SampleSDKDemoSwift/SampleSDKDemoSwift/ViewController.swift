@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         NSLog("RoboVM version %@", sdk.roboVmVersion());
 
         var calc:Calculator;
-        calc = sdk.newCalculator();
+        calc = sdk.createCalculator();
         calc.add(123);
         calc.sub(23);
         NSLog("%d",calc.result());

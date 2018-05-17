@@ -18,7 +18,7 @@
     SampleSDK* sdk = SampleSDKInstance();
     NSLog(@"RoboVM version %@", [sdk roboVmVersion]);
 
-    Calculator* calc = [sdk newCalculator];
+    Calculator* calc = [sdk createCalculator];
     [calc add:123];
     [calc sub:23];
     NSLog(@"%d", [calc result]);
