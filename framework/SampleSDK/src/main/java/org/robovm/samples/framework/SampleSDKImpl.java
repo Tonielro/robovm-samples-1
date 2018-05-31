@@ -1,6 +1,8 @@
 package org.robovm.samples.framework;
 
 import org.robovm.apple.foundation.NSObject;
+import org.robovm.objc.annotation.Block;
+import org.robovm.rt.Signals;
 import org.robovm.rt.VM;
 
 /**
@@ -42,5 +44,10 @@ public class SampleSDKImpl extends NSObject implements Api.SampleSDK {
     @Override
     public Api.WebServer webServer() {
         return webServerInstance;
+    }
+
+    @Override
+    public void installSignals(@Block Runnable installer) {
+        Signals.installSignals(installer::run);
     }
 }

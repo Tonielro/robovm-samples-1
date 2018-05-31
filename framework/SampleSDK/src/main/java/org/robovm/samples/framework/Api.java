@@ -1,7 +1,9 @@
 package org.robovm.samples.framework;
 
 import org.robovm.objc.ObjCProtocol;
+import org.robovm.objc.annotation.Block;
 import org.robovm.objc.annotation.Method;
+import org.robovm.objc.block.VoidBlock;
 
 /**
  * this class defines API SDK exports, API is exported as protocol as RoboVM creates objc classes during runtime
@@ -42,6 +44,12 @@ public final class Api {
          * sample api that returns webserver instance
          */
         @Method WebServer webServer();
+
+        /**
+         * installs Signal handlers of main application
+         * @param installer block that will perform all related installation
+         */
+        @Method void installSignals(@Block Runnable installer);
     }
 
     /**

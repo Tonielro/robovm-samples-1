@@ -41,6 +41,7 @@ NS_SWIFT_NAME(SampleSDK)
 -(void) sayHello;
 -(NSString*) roboVmVersion;
 -(WebServer *) webServer;
+-(void)installSignals:(void(^)(void))installer;
 @end
 typedef NSObject<SampleSDK> SampleSDK;
 

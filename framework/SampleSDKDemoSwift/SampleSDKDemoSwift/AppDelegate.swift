@@ -5,6 +5,7 @@
 
 
 import UIKit
+import SampleSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //
+        // IMPORTANT: all crash logger and other frameworks/code that uses signals shall be intiated
+        // inside installSignals callback. This preserves RoboVM signal handlers otherwise RoboVM will
+        // not be able to catch null pointer exceptions in Java code which causes crash of entire application
+        //
+        var sdk:SampleSDK!;
+        sdk = SampleSDKInstance();
+        sdk.installSignals {
+            // put framework initialization here, e.g. Crashlytics
+            // Fabric.with([Crashlytics.self])
+        }
+        
         return true
     }
 
