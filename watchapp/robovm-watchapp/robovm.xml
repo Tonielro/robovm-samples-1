@@ -1,0 +1,24 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>resources</directory>
+        </resource>
+    </resources>
+
+    <watchKitApp>
+        <app>watch.app</app>
+    </watchKitApp>
+
+    <appExtensionPaths>
+        <!-- path where app extensions (such as watch.app) will be searched in -->
+        <path>exts-sim</path>
+    </appExtensionPaths>
+
+    <!-- Remove comment to automatically skip compilation and linking in IDEA -->
+    <!-- <smartSkipRebuild>true</smartSkipRebuild> -->
+</config>
